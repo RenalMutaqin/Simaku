@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const hapusButton = document.getElementById('hapusButton');
+    const konfirmasiPopup = document.getElementById('konfirmasiPopup');
+    const overlay = document.getElementById('overlay');
+    
+    // Ketika tombol diklik, tampilkan pop-up
+    hapusButton.addEventListener('click', function() {
+      konfirmasiPopup.style.display = 'block';
+      overlay.style.display = 'block';
+    });
+    
+    // Ketika tombol "Ya" diklik, lakukan tindakan hapus data
+    document.getElementById('yaButton').addEventListener('click', function() {
+      // Lakukan tindakan hapus data di sini
+      
+      // Sembunyikan pop-up setelah tindakan selesai
+      konfirmasiPopup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+    
+    // Ketika tombol "Tidak" atau latar belakang semitransparan diklik, sembunyikan pop-up
+    document.getElementById('tidakButton').addEventListener('click', function() {
+      konfirmasiPopup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+    overlay.addEventListener('click', function() {
+      konfirmasiPopup.style.display = 'none';
+      overlay.style.display = 'none';
+    });
+</script>
+</html>

@@ -1,0 +1,135 @@
+/* Reset CSS untuk menghapus margin dan padding default */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #F8F8FA;
+}
+
+/* CSS untuk sidebar */
+.sidebar {
+    background-color: #fff;
+    color: #121f3e;
+    width: 300px;
+    padding: 20px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-top: -10px;
+    justify-content: center;
+}
+
+.sidebar h6 {
+    color: #ABB3C4;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #121f3e;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #4640DE;
+    color: #fff;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+.menu img {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+.content {
+    width: 100%;
+    margin-top: 24px;
+  }
+  
+  .content .left-td {
+    text-align: left;
+    color: #121f3e;
+    margin-right: 100px;
+  }
+  
+  .content .right-td {
+    float: right;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+  }
+  
+  .content .right-td .search-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content .right-td input {
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    padding: 5px 30px 5px 20px;
+    width: 100%; /* Mengisi seluruh lebar .right-td */
+  }
+  
+  .content .right-td img {
+    width: 20px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-left: -24px; /* Geser gambar ke kiri untuk tumpang tindih dengan input */
+    position: relative;
+    z-index: 1;
+  }
+  .tambahdosen {
+    border-radius: 100px;
+    background-color: #4640DE;
+    border-color: #4640DE;
+    color: #fff;
+    margin-right: 100px;
+    float: right;
+    padding: 5px 30px 5px 20px;
+    align-items: center;
+    display: flex;
+  }
+  .content .jumlahpegawai {
+    width: 1200px;
+    color: #121f3e;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Untuk elemen gambar dalam .jumlahpegawai */
+  .content .jumlahpegawai img {
+    width: 24px;
+    display: inline-block; /* Menampilkan gambar sebagai elemen inline-block */
+    vertical-align: middle; /* Mengatur vertikal alignment ke tengah */
+    margin-left: 10px; /* Menambahkan jarak antara gambar dan teks */
+  }
+  
+ 

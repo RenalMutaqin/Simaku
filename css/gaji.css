@@ -1,0 +1,222 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    color: #F8F8FA;
+}
+
+.sidebar {
+    background-color: #fff;
+    color: #121f3e;
+    width: 280px;
+    padding: 20px;
+    min-height: auto;
+    display: flex; /* Menambahkan display flex untuk mengatur posisi logo */
+    flex-direction: column; /* Mengatur tata letak ke vertikal */
+    justify-content: flex-start; /* Menempatkan logo di bagian atas */
+    font-size: 16px;
+}
+
+.sidebar img {
+    width: 100px;
+    margin-top: -10px;
+    justify-content: center;
+}
+.sidebar h6 {
+    color: #ABB3C4;
+}
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px; /* Mengatur margin atas untuk menu */
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #121f3e;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #4640DE;
+    color: #fff;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    display: none;
+}
+.menu img {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: -5px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+.content {
+    width: 100%;
+    margin-top: 24px;
+  }
+  
+  .content .left-td {
+    text-align: left;
+    color: #121f3e;
+    margin-right: 100px;
+    border: none;
+  }
+  
+  .content .right-td {
+    float: right;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+    border: none;
+  }
+  
+  .content .right-td .search-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content .right-td input {
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    padding: 5px 30px 5px 20px;
+    width: 100%; /* Mengisi seluruh lebar .right-td */
+  }
+  
+
+  .maincontent {
+    color: #121f3e;
+    float: left; /* Menjadikan maincontent berada di kiri */
+    width: 100%; /* Anda dapat menyesuaikan lebar sesuai kebutuhan */
+
+  }
+  
+  /* Tambahkan kode CSS berikut untuk membuat maincontent berada di bawah table jumlah pegawai */
+  .maincontent {
+    clear: both;
+  }
+  .maincontent img {
+    width: 24px;
+  }
+  .maincontent table {
+    border-collapse: separate; /* Memisahkan batas sel */
+    border-spacing: 25px; /* Mengatur jarak antar sel */
+    text-align: center;
+    margin-left: 0px;
+  }
+  .text {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+  }
+  .caption {
+    color: #DA241A;
+    margin-top: 15px;
+  }
+  
+  .peringatan {
+    color: black;
+    text-align: center;
+  }
+  
+  .imgperingatan {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  #overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+  }
+  
+  #konfirmasiPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    text-align: center;
+    border-radius: 25px;
+    width: 35%;
+  }
+  
+  .button-container {
+    text-align: center; /* Menyatukan tombol di tengah secara horizontal */
+    margin-top: 20px; /* Memberikan jarak atas dari caption ke tombol */
+  }
+  
+  #yaButton{
+    background-color: #DA241A;
+    border-radius: 25PX;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px; /* Memberikan jarak antara tombol */
+    cursor: pointer; /* Mengubah ikon kursor saat diarahkan ke tombol */
+    display: inline-block; /* Menjadikan tombol bersampingan */
+    width: 30%;
+  }
+  
+  #tidakButton {
+    margin-left: 10px;
+    border-radius: 25PX;
+    background-color: #ABB3C4;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer; /* Memberikan jarak antara tombol "Ya" dan "Tidak" */
+    width: 30%;
+  }
+  #hapusButton {
+    border: none;
+  }
+
+  .managegaji {
+    color: #121f3e;
+    float: left; /* Menjadikan maincontent berada di kiri */
+    width: 100%; /* Anda dapat menyesuaikan lebar sesuai kebutuhan */
+    margin-top: 30px;
+  }
+  
+  /* Tambahkan kode CSS berikut untuk membuat maincontent berada di bawah table jumlah pegawai */
+  .managegaji {
+    clear: both;
+  }
+  .managegaji img {
+    width: 24px;
+  }
+  .managegaji table {
+    border-collapse: collapse; /* Memisahkan batas sel */
+    border-spacing: 35px; /* Mengatur jarak antar sel */
+    text-align: center;
+    margin-left: 0px;
+    border-bottom: 1px solid grey;
+  }
+  .managegaji th,td {
+     border-bottom: 1px solid grey;
+     padding: 8px;
+     text-align: center;
+  }
