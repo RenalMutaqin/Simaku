@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../css/style.tambahgaji.css">
+  <title>Tambah Dosen Tetap</title>
+</head>
+<body>
+        <img class="img" src="../../../Assets/logo.png" alt="">
+        <div class="form-container">
+          <div class="form">
+            <h2>Tambah Gaji Dosen Luar Biasa</h2>
+        
+            <form action="#" method="post">
+              <table class="identitas">
+                <tr>
+                  <td><span class="label">Nomor Pegawai   </span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nopeg">001</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Nama Lengkap</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nama">Renal Mutaqin</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Golongan</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="golongan">IV-A</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Jabatan</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="jabatan">Rektor</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Nama Bank</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nama_bank">Mandiri</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Periode</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="periode">Januari 2023</span></td>
+                </tr>
+                <tr>
+                  
+                </tr>
+              </table>
+            </form>
+          
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Komponen Pendapatan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="honor_mengajar">Honor Mengajar</label>
+                      <input type="text" id="honor_mengajar" name="honor_mengajar">
+                    </td>
+                    <td>
+                      <label for="tj_guru_besar">Tunjangan Guru Besar</label>
+                      <input type="text" id="tj_guru_besar" name="tj_guru_besar">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="honor_kinerja">Honor Kinerja</label>
+                      <input type="text" id="honor_kinerja" name="honor_kinerja">
+                    </td>
+                    <td>
+                      <label for="tunjangan_tambahan">Tunjangan Tambahan</label>
+                      <input type="text" id="tunjangan_tambahan" name="tunjangan_tambahan">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="total_pendapatan">Total Pendapatan</label>
+                      <input type="text" id="total_pendapatan" name="total_pendapatan" readonly>
+                    </td>
+                    
+                    <td colspan="2">
+                      <button class="tambahkomponen">Tambah Komponen Lain</button>
+                    </td>
+                    
+                  </tr>
+             
+                  <tr>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                  
+                  <!-- Tambahkan bagian lain dari formulir di sini -->
+                </tbody>
+                
+              
+            
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Potongan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="sp_FH">SP FH</label>
+                      <input type="text" id="sp_FH" name="sp_FH">
+                    </td>
+                    <td>
+                      <label for="infaq">Infaq</label>
+                      <input type="text" id="infaq" name="infaq">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="total_potongan">Total Potongan</label>
+                      <input type="text" id="total_potongan" name="total_potongan" readonly>
+                    </td>
+                    <td colspan="2">
+                      <button class="tambahkomponen">Tambah Komponen Lain</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                  <!-- Tambahkan bagian lain dari formulir di sini -->
+                </tbody>
+              </table>
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Pajak</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="pph_25">PPH 25</label>
+                      <input type="text" id="pph_25" name="pph_25">
+                    </td>
+                    <td>
+                      <label for="total_pendapatan">Total Pendapatan Bersih</label>
+                      <input type="text" id="total_pendapatan" name="total_pendapatan" readonly>
+                    </td>
+                 <tr>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                  <!-- Tambahkan bagian lain dari formulir di sini -->
+                </tbody>
+              </table>
+              <div class="button-container">
+                <button class="submit">Submit</button>
+
+              </div>
+            </form>
+          </div>
+        </div>
+        <a href="../dosentetap.html"><img class="close" src="../../../Assets/close.png" alt=""></a>
+      </body>
+      </html>

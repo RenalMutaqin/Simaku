@@ -59,7 +59,7 @@ body {
   .form input {
     border-radius: 15px;
     width: 100%;
-    height: 32px;
+    height: 28px;
     border: 1px solid black;
   }
   
@@ -68,7 +68,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 80px;
-    gap: 10px;
+    gap: 5px;
   }
   
   .submit {
@@ -87,8 +87,8 @@ body {
   
   .input-field {
     border-radius: 15px;
-    width: 100%;
-    height: 32px;
+    width: 50%;
+    height: 28px;
   }
   
   .form-table {
@@ -98,6 +98,7 @@ body {
   }
   
   .headgaji {
+  
     background-color: #1F2B48;
     color: #fff;
     font-weight: bold;
@@ -107,8 +108,8 @@ body {
   }
   
   .form-table td {
-    padding: 24px;
-    padding-top: 12px;
+    padding: 10px;
+   
     height: 24px;
     text-align: left;
     
@@ -118,7 +119,37 @@ body {
     border-radius: 18px;
     float: right; /* Menggeser tombol ke kanan */
     border-style: none;
-    height: 40px;
-    width: 280px;
+    height: 32px;
+    width: 200px;
     color: #fff;
+  }
+  .tambahkomponen {
+    background-color: #027800;
+    border-radius: 18px;
+    float: right; /* Menggeser tombol ke kanan */
+    border-style: none;
+    height: 32px;
+    width: 200px;
+    color: #fff;
+  }
+  .readonly-input {
+    position: relative;
+  }
+
+  .readonly-input input {
+    background-color: #f0f0f0; /* Warna latar belakang abu-abu */
+    border: none;
+    padding: 5px;
+    width: 100%;
+  }
+
+  .readonly-input input:read-only {
+    cursor: not-allowed; /* Menonaktifkan kursor */
+  }
+
+  .readonly-input i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
   }
