@@ -8,15 +8,17 @@ body {
 }
 
 /* CSS untuk sidebar */
+
 .sidebar {
     background-color: #fff;
     color: #121f3e;
-    width: 300px;
+    width: 280px;
     padding: 20px;
     min-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: flex; /* Menambahkan display flex untuk mengatur posisi logo */
+    flex-direction: column; /* Mengatur tata letak ke vertikal */
+    justify-content: flex-start; /* Menempatkan logo di bagian atas */
+    font-size: 16px;
 }
 
 .sidebar img {
@@ -24,16 +26,13 @@ body {
     margin-top: -10px;
     justify-content: center;
 }
-
 .sidebar h6 {
     color: #ABB3C4;
 }
-
 .menu {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
-    width: 200px;
+    margin-top: 10px; /* Mengatur margin atas untuk menu */
 }
 
 .menu li {
@@ -58,6 +57,11 @@ body {
     padding: 0;
     margin-left: 20px;
     display: none;
+}
+.menu img {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: -5px;
 }
 
 .menu li:hover .submenu {
@@ -104,32 +108,23 @@ body {
     z-index: 1;
 }
 
-.tambahdosen {
-    border-radius: 100px;
-    background-color: #4640DE;
-    border-color: #4640DE;
-    color: #fff;
-    margin-right: 0%;
+.cetak {
+
     float: right;
     padding: 5px 30px 5px 20px;
     align-items: right;
     display: flex;
-}
-
-.content .jumlahpegawai {
-    width: 100%;
+    width: 36px;
+    z-index: 999;
     color: #121f3e;
-    text-align: left;
-    margin-top: 10px;
-    margin-bottom: 10px;
+}
+.judul {
+    color: #121f3e;
+    text-align: center;
+    border-bottom: black solid 1px;
 }
 
-.content .jumlahpegawai img {
-    width: 24px;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: 10px;
-}
+
 
 .maincontent {
     color: #121f3e;
@@ -156,7 +151,6 @@ body {
     background-color: #4640DE;
     border-radius: 100px;
     color: #fff;
-    border-style: none;
 }
 
 .text {
@@ -192,53 +186,59 @@ body {
     z-index: 9998;
 }
 
-#konfirmasiPopup {
-    display: none;
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: white;
-    padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    z-index: 9999;
-    text-align: center;
-    border-radius: 25px;
-    width: 35%;
-}
 
-.button-container {
-    text-align: center;
-    margin-top: 20px;
-}
 
-#yaButton {
-    background-color: #DA241A;
-    border-radius: 25px;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 10px;
-    cursor: pointer;
+.dropdown {
+    position: relative;
     display: inline-block;
-    width: 30%;
-    border-style: none;
-}
-
-#tidakButton {
-    margin-left: 10px;
-    border-radius: 25px;
-    background-color: #ABB3C4;
-    color: #fff;
-    padding: 10px 20px;
-    margin: 10px;
+    border-radius: 24px;
+    margin-bottom: 35px;
+    margin-top: 35px;
+  }
+  .dropdown-toggle {
+    color: black;
+    padding: 5px 20px;
+    border: 1px solid black;
     cursor: pointer;
-    width: 30%;
-    border-style: none;
-}
+    border-radius: 24px;
+    background-color: #fff;
 
-#hapusButton {
-    border: none;
-    inline-size: 0%;
-    margin: 0;
-    padding: 0;
 }
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 24px;
+  }
+
+  .dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: black;
+
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+
+  }
+  .periode {
+    color: black;
+    text-decoration: none;
+  }
+.lihatdata {
+    background-color: #4640DE;
+    color: #fff;
+    border-radius: 24px;
+    border-style: none;
+    width: max-content;
+}
+  .gambar {
+    width: 38px;
+    float: right;
+    margin-top: 35px;
+  }

@@ -8,6 +8,7 @@ body {
     background-color: #f0f0f0;
   }
   
+
   .img {
     position: absolute;
     top: 0;
@@ -63,7 +64,7 @@ body {
     border: 1px solid black;
   }
   
-  .button-container {
+  .submit-button {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,6 +221,7 @@ body {
     cursor: pointer;
     border-radius: 100px;
     height: 40px;
+    align-items: center;
   }
   
 
@@ -253,6 +255,7 @@ body {
     text-align: left;
     
   }
+
   .simpangaji {
     background-color: #4640DE;
     border-radius: 18px;
@@ -291,16 +294,232 @@ body {
     
   }
   
-  .info-content {
+  .button-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+.button-container .dropdown {
+    display: inline-block;
+    position: relative;
+}
+
+.button-container .dropdown-toggle {
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    border-radius: 24px;
+    height: 32px;
+    padding: 5px 20px;
+}
+
+.button-container .dropdown-menu {
     display: none;
-    background-color: white;
-    border: 1px solid grey;
-    padding: 10px;
-    position: relative; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    top: 0px; /* Sesuaikan dengan posisi ikon yang diinginkan */
-    left: 20px; /* Sesuaikan dengan posisi ikon yang diinginkan */
+    border-radius: 24px;
+    top: 40px; /* Adjust this value as needed */
+}
+
+.button-container .dropdown-menu a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    color: black;
+}
+
+.button-container .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.button-container .lihatdata {
+    background-color: #4640DE;
+    color: #fff;
+    border-radius: 24px;
+    border: none;
+    height: 32px;
+    padding: 5px 20px;
+}
+
+.button-container .periode {
+    color: black;
+    text-decoration: none;
+}
+.gambar {
+    width: 38px;
+    float: right;
+  }
+  .triangle-icon {
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent; /* Adjust the size as needed */
+    border-right: 5px solid transparent; /* Adjust the size as needed */
+    border-top: 5px solid black; /* Adjust the color and size as needed */
+    margin-left: 5px; /* Adjust the spacing between the text and the triangle */
+    display: inline-block;
   }
   
+
+/*Kode Konfirmasi Hapus*/
+
   
+.text {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.caption {
+    color: #DA241A;
+    margin-top: 15px;
+}
+
+.peringatan {
+    color: black;
+    text-align: center;
+}
+
+.imgperingatan {
+    width: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+#konfirmasiPopup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    text-align: center;
+    border-radius: 25px;
+    width: 35%;
+}
+
+.button-popup {
+    text-align: center;
+    margin-top: 20px;
+    border-style: none;
+}
+
+#yaButton {
+    background-color: #DA241A;
+    border-radius: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    display: inline-block;
+    width: 30%;
+    border-style: none;
+}
+
+#tidakButton {
+    margin-left: 10px;
+    border-radius: 25px;
+    background-color: #ABB3C4;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    width: 30%;
+    border-style: none;
+}
+.button-up {
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*Slip gaji*/
+/* CSS untuk styling pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    text-align: center;
+    border-radius: 10px;
+    width: fit-content;
+    height: fit-content;
+    line-height: 0;
+    
+}
+.popup td {
+    text-align: left;
+    line-height: 1;
+    padding-top: 12px;
+}
+
+#closeButton {
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#cetak {
+    background-color: green;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+#kirim {
+    background-color: #4640DE;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.custom-line {
+    color: black; /* Warna garis */
+    border-style: 10px solid; /* Gaya garis (dashed, solid, etc.) */
+    width: 100%; /* Lebar garis */
+}
+.ttd p{
+    text-align: right;
+    padding: 16px;
+    right: 10px;
+    margin-bottom: 16px;
+    margin-top: 16;   
+}
+
+.popup img {
+    position: absolute;
+    top: 5px;
+    right: 0;
+    margin-right: 10px;
+    width: 32px;
+    height: 32px;
+}

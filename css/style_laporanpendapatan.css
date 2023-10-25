@@ -8,15 +8,16 @@ body {
 }
 
 /* CSS untuk sidebar */
+
 .sidebar {
     background-color: #fff;
     color: #121f3e;
-    width: 300px;
+    width: 280px;
     padding: 20px;
     min-height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+    display: flex; /* Menambahkan display flex untuk mengatur posisi logo */
+    flex-direction: column; /* Mengatur tata letak ke vertikal */
+    justify-content: flex-start; /* Menempatkan logo di bagian atas */
     font-size: 16px;
 }
 
@@ -25,16 +26,13 @@ body {
     margin-top: -10px;
     justify-content: center;
 }
-
 .sidebar h6 {
     color: #ABB3C4;
 }
-
 .menu {
     list-style: none;
     padding: 0;
-    margin-top: 10px;
-    width: 200px;
+    margin-top: 10px; /* Mengatur margin atas untuk menu */
 }
 
 .menu li {
@@ -59,6 +57,11 @@ body {
     padding: 0;
     margin-left: 20px;
     display: none;
+}
+.menu img {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: -5px;
 }
 
 .menu li:hover .submenu {
@@ -119,6 +122,8 @@ body {
     color: #121f3e;
     text-align: center;
     border-bottom: black solid 1px;
+    font-weight: bold;
+    line-height: 16px;
 }
 
 
@@ -139,51 +144,11 @@ body {
 
 .maincontent table {
     border-collapse: separate;
-    border-spacing: 25px;
+    border-spacing: 12px;
     text-align: center;
     margin-left: -24px;
-}
-
-.status {
-    background-color: #4640DE;
-    border-radius: 100px;
-    color: #fff;
-}
-
-.text {
-    color: black;
-    text-align: center;
-    font-size: 16px;
-}
-
-.caption {
-    color: #DA241A;
-    margin-top: 15px;
-}
-
-.peringatan {
-    color: black;
-    text-align: center;
-}
-
-.imgperingatan {
-    width: 50px;
-    display: block;
-    margin: 0 auto;
-}
-
-#overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9998;
 }
-
-
 
 .dropdown {
     position: relative;
@@ -199,6 +164,7 @@ body {
     cursor: pointer;
     border-radius: 24px;
     background-color: #fff;
+    height: 32px;
 
 }
   .dropdown-menu {
@@ -233,6 +199,7 @@ body {
     border-radius: 24px;
     border-style: none;
     width: max-content;
+    height: 32px;
 }
   .gambar {
     width: 38px;
