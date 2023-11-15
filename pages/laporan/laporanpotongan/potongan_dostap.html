@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../../css/style_laporan.css">
+  <title>Laporan Potongan Dosen Tetap</title>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="../../../Assets/logo.png" alt="Logo SIMAKU">
+    <h6>Daily Use</h6>
+    <ul class="menu">
+      <li><a href="../../overview.html"><img src="../../../Assets/overview.png">Overview</a></li>
+      <li><a href="#"><img src="../../../Assets/user.png">Manage Pegawai</a>
+        <ul class="submenu">
+          <li><a href="../../manage_pegawai/dosentetap.html">Dosen Tetap</a></li>
+          <li><a href="../../manage_pegawai/dosenlb.html">Dosen Luar Biasa</a></li>
+          <li><a href="../../manage_pegawai/karyawan.html">Karyawan</a></li>
+        </ul>
+      </li>
+      <li><a href="#"><img src="../../../Assets/tambahgaji.png">Gaji</a>
+      <ul class="submenu">
+        <li><a href="../pages/gaji/dosentetap.html">Dosen Tetap</a></li>
+        <li><a href="../pages/gaji/dosenlb.html">Dosen Luar Biasa</a></li>
+        <li><a href="../pages/gaji/karyawan.html">Karyawan</a></li>
+      </ul>
+      </li>
+      <li><a href="#"><img src="../../../Assets/laporan.png">Laporan</a>
+        <ul class="submenu">
+          <li><a href="../pages/laporan/pendapatan.html">Rekapitulasi Pendapatan</a></li>
+          <li><a href="../pages/laporan/pendapatanbersih.html">Pendapatan Bersih</a></li>
+          <li><a href="../pages/laporan/pajak.html">Laporan Pajak</a></li>
+          <li><a href="../pages/laporan/potongan.html">Laporan Potongan</a></li>
+          <li><a href="../pages/laporan/bank.html">Rekapitulasi Bank</a></li>
+        </ul>
+      </li>
+      <li><a href="../overview.html"> <img src="../../../Assets/logout.png">Log Out</a></li>
+    </ul>
+  </div>
+  <div class="content">
+    <table>
+      <td class="left-td"><h2>Dosen Tetap</h2></td>
+      <td class="right-td">
+        <label class="search-label">
+          <input type="text" placeholder="Search...">
+          <img src="../Assets/search.png" alt="">
+        </label>
+      </td>
+    </table>
+    <div class="dropdown">
+        <button class="dropdown-toggle" id="dropdownBtn">Pilih Periode</button>
+        <div class="dropdown-menu" id="dropdownMenu">
+          <a href="#">Dosen Tetap</a>
+          <a href="#">Dosen Luar Biasa</a>
+          <a href="#">Karyawan</a>
+        </div>
+      </div>
+      
+      <a class="periode">Periode Penggajian</a>
+      
+      <div class="dropdown">
+        <button class="dropdown-toggle" id="opsiDropdownBtn">Pilih Opsi</button>
+        <div class="dropdown-menu" id="opsiDropdownMenu">
+          <a href="#">Opsi 1</a>
+          <a href="#">Opsi 2</a>
+          <a href="#">Opsi 3</a>
+        </div>
+      </div>
+    <button class= "lihatdata">Lihat Data</button>
+    <img class="gambar" src="../../../Assets/print.png" alt="Cetak">
+    
+
+    
+    <div class="maincontent">
+      <table>
+        <h4 class="judul"><p>Rekapitulasi Pembayaran Honorium Mengajar dan Pendapatan Lain</p>
+          <p>Dosen Tetap Fakultas Hukum UNPAS Tahun Anggaran 2023/2024</p>
+        <p>Untuk Semester Ganjil Bulan Januari 2023</p>
+      </h4>
+        <tr>
+            <th>No Pegawai</th>
+            <th>Nama Lengkap</th>
+            <th>Arisan</th>
+            <th>Bank Jabar</th>
+            <th>BBKH</th>
+            <th>Bon FH</th>
+            <th>BRI</th>
+            <th>IID</th>
+            <th>IIKU</th>
+            <th>INFAQ</th>
+            <th>Koperasi</th>
+            <th>PKP</th>
+            <th>PPH21</th>
+        </tr>
+        <tr>
+            <td>001</td>
+            <td>David da Silva</td>
+            <td>IV A</td>
+            <td>4.500.000</td>
+            <td>5.000.000</td>
+            <td>9.500.000</td>
+            <td>2.000.000</td>
+            <td>7.500.000</td>
+            <td>300.000</td>
+            <td>250.000</td>
+            <td>50.000</td>
+            <td>35.000</td>
+            <td>154.000</td>
+        </tr>
+        <tr>
+          <td>001</td>
+          <td>David da Silva</td>
+          <td>IV A</td>
+          <td>4.500.000</td>
+          <td>5.000.000</td>
+          <td>9.500.000</td>
+          <td>2.000.000</td>
+          <td>7.500.000</td>
+          <td>300.000</td>
+          <td>250.000</td>
+          <td>50.000</td>
+          <td>35.000</td>
+          <td>154.000</td>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>David da Silva</td>
+        <td>IV A</td>
+        <td>4.500.000</td>
+        <td>5.000.000</td>
+        <td>9.500.000</td>
+        <td>2.000.000</td>
+        <td>7.500.000</td>
+        <td>300.000</td>
+        <td>250.000</td>
+        <td>50.000</td>
+        <td>35.000</td>
+        <td>154.000</td>
+    </tr>
+    <tr>
+      <td>001</td>
+      <td>David da Silva</td>
+      <td>IV A</td>
+      <td>4.500.000</td>
+      <td>5.000.000</td>
+      <td>9.500.000</td>
+      <td>2.000.000</td>
+      <td>7.500.000</td>
+      <td>300.000</td>
+      <td>250.000</td>
+      <td>50.000</td>
+      <td>35.000</td>
+      <td>154.000</td>
+  </tr>
+  <tr>
+    <td>001</td>
+    <td>David da Silva</td>
+    <td>IV A</td>
+    <td>4.500.000</td>
+    <td>5.000.000</td>
+    <td>9.500.000</td>
+    <td>2.000.000</td>
+    <td>7.500.000</td>
+    <td>300.000</td>
+    <td>250.000</td>
+    <td>50.000</td>
+    <td>35.000</td>
+    <td>154.000</td>
+</tr>
+<tr>
+  <td>001</td>
+  <td>David da Silva</td>
+  <td>IV A</td>
+  <td>4.500.000</td>
+  <td>5.000.000</td>
+  <td>9.500.000</td>
+  <td>2.000.000</td>
+  <td>7.500.000</td>
+  <td>300.000</td>
+  <td>250.000</td>
+  <td>50.000</td>
+  <td>35.000</td>
+  <td>154.000</td>
+</tr>
+<tr>
+  <td>001</td>
+  <td>David da Silva</td>
+  <td>IV A</td>
+  <td>4.500.000</td>
+  <td>5.000.000</td>
+  <td>9.500.000</td>
+  <td>2.000.000</td>
+  <td>7.500.000</td>
+  <td>300.000</td>
+  <td>250.000</td>
+  <td>50.000</td>
+  <td>35.000</td>
+  <td>154.000</td>
+</tr>
+
+
+      </table>
+    </div>
+  </div>
+ 
+
+</body>
+<script>
+    // Ambil elemen-elemen yang dibutuhkan
+    const dropdownBtn = document.getElementById("dropdownBtn");
+    const dropdownMenu = document.getElementById("dropdownMenu");
+    const opsiDropdownBtn = document.getElementById("opsiDropdownBtn");
+    const opsiDropdownMenu = document.getElementById("opsiDropdownMenu");
+
+    // Tambahkan event listener untuk tombol dropdown Pilih Periode
+    dropdownBtn.addEventListener("click", function() {
+      // Toggle class 'show-dropdown' untuk menampilkan atau menyembunyikan dropdown
+      dropdownMenu.classList.toggle("show-dropdown");
+    });
+
+    // Tambahkan event listener untuk tombol dropdown Pilih Opsi
+    opsiDropdownBtn.addEventListener("click", function() {
+      // Toggle class 'show-dropdown' untuk menampilkan atau menyembunyikan dropdown
+      opsiDropdownMenu.classList.toggle("show-dropdown");
+    });
+
+    // Tutup dropdown saat klik di luar dropdown
+    document.addEventListener("click", function(event) {
+      if (!dropdownBtn.contains(event.target)) {
+        dropdownMenu.classList.remove("show-dropdown");
+      }
+      if (!opsiDropdownBtn.contains(event.target)) {
+        opsiDropdownMenu.classList.remove("show-dropdown");
+      }
+    });
+  </script>
+
+</html>

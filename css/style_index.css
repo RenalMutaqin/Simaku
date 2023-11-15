@@ -1,0 +1,226 @@
+body {
+  font-family: 'Poppins' sans-serif; 
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #F8F8FA;
+}
+
+
+/* CSS untuk sidebar */
+.sidebar {
+    background-color: #fff;
+    color: #121f3e;
+    width: 300px;
+    padding: 20px;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 16px;
+}
+
+.sidebar img {
+  width: 150px;
+  justify-content: center;
+  margin-bottom: 32px;
+}
+
+.sidebar h6 {
+    color: #ABB3C4;
+   
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+    width: 200px;
+}
+
+.menu li {
+    margin-bottom: 10px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #121f3e;
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu a:hover {
+    background-color: #4640DE;
+    color: #fff;
+}
+
+.submenu {
+    list-style: none;
+    padding: 0;
+    margin-left: 20px;
+    display: none;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+.menu img {
+    width: 16px;
+    margin-right: 5px;
+    margin-bottom: 0px;
+}
+.content {
+    width: 100%;
+    margin-top: 24px;
+  }
+  
+  .content .left-td {
+    text-align: left;
+    color: #121f3e;
+    margin-right: 100px;
+  }
+  
+  .content .right-td {
+    float: right;
+    margin-right: 25px;
+    position: absolute;
+    right: 0;
+  }
+  
+  .content .right-td .search-label {
+    display: flex;
+    align-items: center;
+  }
+  
+  .content .right-td input {
+    border-radius: 100px;
+    border: 1px solid #ccc;
+    padding: 5px 30px 5px 20px;
+    width: 100%; /* Mengisi seluruh lebar .right-td */
+  }
+  
+  .content .right-td img {
+    width: 20px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    margin-left: -24px; /* Geser gambar ke kiri untuk tumpang tindih dengan input */
+    position: relative;
+    z-index: 1;
+  }
+  .tambahdosen {
+    border-radius: 100px;
+    background-color: #4640DE;
+    border-color: #4640DE;
+    color: #fff;
+    margin-right: 100px;
+    float: right;
+    padding: 5px 30px 5px 20px;
+    align-items: center;
+    display: flex;
+  }
+  .content .jumlahpegawai {
+    width: 1200px;
+    color: #121f3e;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  /* Untuk elemen gambar dalam .jumlahpegawai */
+  .content .jumlahpegawai img {
+    width: 24px;
+    display: inline-block; /* Menampilkan gambar sebagai elemen inline-block */
+    vertical-align: middle; /* Mengatur vertikal alignment ke tengah */
+    margin-left: 10px; /* Menambahkan jarak antara gambar dan teks */
+  }
+  
+  .status {
+    background-color: #4640DE;
+    border-radius: 100px;
+    color: #fff;
+    border-style: none;
+}
+
+.text {
+    color: black;
+    text-align: center;
+    font-size: 16px;
+}
+
+.caption {
+    color: #DA241A;
+    margin-top: 15px;
+}
+  
+.peringatan {
+  color: black;
+  text-align: center;
+}
+
+.imgperingatan {
+  width: 50px;
+  display: block;
+  margin: 0 auto;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 9998;
+}
+
+#konfirmasiPopup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  text-align: center;
+  border-radius: 25px;
+  width: 35%;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+#yaButton {
+  background-color: #DA241A;
+  border-radius: 25px;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  display: inline-block;
+  width: 30%;
+  border-style: none;
+}
+
+#tidakButton {
+  margin-left: 10px;
+  border-radius: 25px;
+  background-color: #ABB3C4;
+  color: #fff;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  width: 30%;
+  border-style: none;
+}
+
+#logout {
+  border: none;
+  background-color: white;
+  color: #DA241A;
+}
+ 

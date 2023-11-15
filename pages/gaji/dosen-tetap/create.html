@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../css/style_create_gaji.css">
+  <title>Tambah Dosen Tetap</title>
+</head>
+<body>
+  <a href="index.html"><img class="close" src="../../../Assets/close.png" alt=""></a>
+        <img class="img" src="../../../Assets/logo.png" alt="">
+        <div class="form-container">
+          <div class="form">
+            <h2>Tambah Gaji Dosen Tetap</h2>
+        
+            <form action="#" method="post">
+              <table class="identitas">
+                <tr>
+                  <td><span class="label">Nomor Pegawai   </span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nopeg">001</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Nama Lengkap</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nama">Renal Mutaqin</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Golongan</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="golongan">IV-A</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Jabatan</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="jabatan">Rektor</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Nama Bank</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="nama_bank">Mandiri</span></td>
+                </tr>
+                <tr>
+                  <td><span class="label">Periode</span></td>
+                  <td><span>:</span></td>
+                  <td><span id="periode">Januari 2023</span></td>
+                </tr>
+                <tr>
+                  
+                </tr>
+              </table>
+            </form>
+          
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Gaji Pusat</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="gaji_pokok">Gaji Pokok</label>
+                      <input type="text" id="gaji_pokok" name="gaji_pokok">
+                    </td>
+                    <td>
+                      <label for="tj_fungsional">Tunjangan Fungsional</label>
+                      <input type="text" id="tj_fungsional" name="tj_fungsional">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="tj_struktural">Tunjangan Struktural</label>
+                      <input type="text" id="tj_struktural" name="tj_struktural">
+                    </td>
+                    <td>
+                      <label for="tj_khs_istimewa">Tunjangan Khusus Istimewa</label>
+                      <input type="text" id="tj_khs_istimewa" name="tj_khs_istimewa">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="tj_pres_kerja">Tunjangan Presensi Kerja</label>
+                      <input type="text" id="tj_pres_kerja" name="tj_pres_kerja">
+                    </td>
+                    <td>
+                      <label for="tj_tambahan">Tunjangan Tambahan</label>
+                      <input type="text" id="tj_tambahan" name="tj_tambahan">
+                    </td>
+                    
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="u_lembur_hk">Uang Lembur HK</label>
+                      <input type="text" id="u_lembur_hk" name="u_lembur_hk">
+                    </td>
+                    <td>
+                      <label for="honor_univ">Honor</label>
+                      <input type="text" id="honor_univ" name="honor_univ">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="u_lembur_hl">Uang Lembur HL</label>
+                      <input type="text" id="u_lembur_hl" name="u_lembur_hl">
+                    </td>
+                    <td>
+                      <label for="tj_suami_istri">Tunjangan Suami/Istri</label>
+                      <input type="text" id="tj_suami_istri" name="tj_suami_istri">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="trans_kehadiran">Transport Kehadiran</label>
+                      <input type="text" id="trans_kehadiran" name="trans_kehadiran">
+                    </td>
+                    <td>
+                      <label for="tj_anak">Tunjangan Anak</label>
+                      <input type="text" id="tj_anak" name="tj_anak">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="total_gaji_univ">Total Gaji Pusat</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="total_gaji_univ" name="total_gaji_univ" readonly>
+                        <div class="info-icon" title="Total Gaji Pusat">ℹ️</div>
+                      </div>
+                    </td>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                </tbody>
+                
+              
+              </table>
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Gaji Fakultas Hukum</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="tj_tambahan">Tunjangan Tambahan</label>
+                      <input type="text" id="tj_tambahan" name="tj_tambahan">
+                    </td>
+                    <td>
+                      <label for="peny_honor_mengajar">Penyesuaian Honor Mengajar</label>
+                      <input type="text" id="peny_honor_mengajar" name="peny_honor_mengajar">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="honor_kinerja">Honor Kinerja</label>
+                      <input type="text" id="honor_kinerja" name="honor_kinerja">
+                    </td>
+                    <td>
+                      <label for="tj_guru_besar">Tunjangan Guru Besar</label>
+                      <input type="text" id="tj_guru_besar" name="tj_guru_besar">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="honor_klb_mengajar">Honor Kelebihan Mengajar</label>
+                      <input type="text" id="honor_klb_mengajar" name="honor_klb_mengajar">
+                    </td>
+                    <td>
+                      <label for="honor">Honor</label>
+                      <input type="text" id="honor" name="honor">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="honor_mengajar_dpk">Honor Mengajar DPK</label>
+                      <input type="text" id="honor_mengajar_dpk" name="honor_mengajar_dpk">
+                    </td>
+                    <td colspan="2">
+                      <button class="tambahkomponen">Tambah Komponen Lain</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="total_gaji_fakultas">Total Gaji Fakultas Hukum</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="total_gaji_fakultas" name="total_gaji_fakultas" readonly>
+                        <div class="info-icon" title="Total Gaji Fakultas Hukum">ℹ️</div>
+                      </div>
+                      </td>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+      
+                </tbody>
+              </table>
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Potongan</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="sp_FH">SP FH</label>
+                      <input type="text" id="sp_FH" name="sp_FH">
+                    </td>
+                    <td>
+                      <label for="infaq">Infaq</label>
+                      <input type="text" id="infaq" name="infaq">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="total_potongan">Total Potongan</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="total_potongan" name="total_potongan" readonly>
+                        <div class="info-icon" title="Total Potongan">ℹ️</div>
+                      </div>
+                      </td>
+                    <td colspan="2">
+                      <button class="tambahkomponen">Tambah Komponen Lain</button>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                  <!-- Tambahkan bagian lain dari formulir di sini -->
+                </tbody>
+              </table>
+              <table class="form-table">
+                <thead>
+                  <tr class="headgaji">
+                    <th colspan="2">Pajak</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <label for="pensiun">Pensiun</label>
+                      <input type="text" id="pensiun" name="pensiun">
+                    </td>
+                    <td class="gray-bg">
+                      <label for="set_pot_kn_pajak">Jumlah Set Potongan Kena Pajak</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="set_pot_kn_pajak" name="set_pot_kn_pajak" readonly>
+                        <div class="info-icon" title="Bruto Untuk Pajak - Jumlah Potongan Kena Pajak">ℹ️</div>
+                      </div>
+                      </td>
+                   
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="bruto_pajak">Bruto Untuk Pajak</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="bruto_pajak" name="bruto_pajak" readonly>
+                        <div class="info-icon" title="Jumlah Gaji FH + Jumlah Gaji Pusat + Pensiun yang dibayarkan FH">ℹ️</div>
+                      </div>
+                      </td>
+                    <td>
+                      <label for="ptkp">PTKP</label>
+                      <input type="text" id="ptkp" name="ptkp">
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="bruto_murni">Bruto Murni</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="bruto_murni" name="bruto_murni" readonly>
+                        <div class="info-icon" title="Gaji Pusat + Gaji Fakultas Hukum">ℹ️</div>
+                      </div>
+                      </td>
+                      <td class="gray-bg">
+                        <label for="pkp">PKP</label>
+                        <div class="input-wrapper">
+                          <input type="text" id="pkp" name="pkp" readonly>
+                          <div class="info-icon" title="Jumlah Setoran Kena Pajak + PTKP">ℹ️</div>
+                        </div>
+                        </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="biaya_jabatan">Biaya Jabatan</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="biaya_jabatan" name="biaya_jabatan" readonly>
+                        <div class="info-icon" title="Biaya Jabatan">ℹ️</div>
+                      </div>
+                      </td>
+                      <td class="gray-bg">
+                        <label for="pajak_pph21">PPH21</label>
+                        <div class="input-wrapper">
+                          <input type="text" id="pajak_pph21" name="pajak_pph21" readonly>
+                          <div class="info-icon" title="Jumlah PKP X 5%">ℹ️</div>
+                        </div>
+                        </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="aksa_mandiri">Asuransi Aksa Mandiri</label>
+                      <input type="text" id="aksa_mandiri" name="aksa_mandiri">
+                    </td>
+                    <td class="gray-bg">
+                      <label for="jml_set_pajak">Jumlah Set Pajak</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="jml_set_pajak" name="jml_set_pajak" readonly>
+                        <div class="info-icon" title="Bruto Untuk Pensiun - DPLK Pensiun - Pensiun - PPH21" >ℹ️</div>
+                      </div>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="dplk_pensiun">DPLK Pensiun</label>
+                      <input type="text" id="dplk_pensiun" name="dplk_pensiun">
+                    </td>
+                    <td class="gray-bg">
+                      <label for="pot_tk_kena_pajak">Potongan Tak Kena Pajak</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="pot_tk_kena_pajak" name="pot_tk_kena_pajak" readonly>
+                        <div class="info-icon" title="Total Potongan">ℹ️</div>
+                      </div>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="jml_pot_kn_pajak">Jumlah Potongan Kena Pajak</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="jml_pot_kn_pajak" name="jml_pot_kn_pajak" readonly>
+                        <div class="info-icon" title="Biaya Jabatan + Jumlah Nabung Mandiri + Jumlah Pensiun yang Dibayarkan FH">ℹ️</div>
+                      </div>
+                      </td>
+                  </tr>
+                  <tr>
+                    <td class="gray-bg">
+                      <label for="pendapatan_bersih">Pendapatan Bersih</label>
+                      <div class="input-wrapper">
+                        <input type="text" id="pendapatan_bersih" name="pendapatan_bersih" readonly>
+                        <div class="info-icon" title="Jumlah Setoran Potongan Kena Pajak - Potongan Tak Kena Pajak">ℹ️</div>
+                      </div>
+                      </td>
+                    <td colspan="2">
+                      <button class="simpangaji">Simpan</button>
+                    </td>
+                  </tr>
+                  <!-- Tambahkan bagian lain dari formulir di sini -->
+                </tbody>
+              </table>
+              <div class="button-container">
+                <button class="submit">Submit</button>
+
+              </div>
+            
+              </div>
+            </form>
+          </div>
+        </div>
+      </body>
+      <!-- <script>
+        function showInfo(infoId) {
+  const infoContent = document.getElementById(infoId);
+  if (infoContent.style.display === 'block') {
+    infoContent.style.display = 'none';
+  } else {
+    infoContent.style.display = 'block';
+  }
+}
+      </script> -->
+      </html>
