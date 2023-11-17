@@ -8,11 +8,12 @@ body {
     background-color: #f0f0f0;
   }
   
-  .img {
+  .logo {
     position: absolute;
-    margin-right: 24PX;
-    width: 100px;
-    height: 32px;
+  top: 0;
+  left: 0;
+  width: 190px;
+  height: 47px;
   }
   
   .close {
@@ -34,7 +35,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    width: 200%;
+    width: 100%;
     margin: 10px;
   }
   
@@ -173,7 +174,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    width: 200%;
+    width: 150%;
     margin: 10px;
   }
   

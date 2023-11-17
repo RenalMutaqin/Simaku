@@ -9,13 +9,12 @@ body {
   }
   
 
-  .img {
+  .logo {
     position: absolute;
     top: 0;
     left: 0;
-    margin-right: 24PX;
-    width: 100px;
-    height: 100px;
+    width: 190px;
+    height: 47px;
   }
   
   .close {
@@ -176,7 +175,7 @@ body {
     background-color: #fff;
     padding: 20px;
     border-radius: 15px;
-    width: 200%;
+    width: 150%;
     margin: 10px;
   }
   
